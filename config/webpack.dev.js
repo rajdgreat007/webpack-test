@@ -24,5 +24,20 @@ module.exports = {
     devServer: {
         contentBase: './' 
         /* path from where index.html will be picked, set as root dir */
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: [
+                    {
+                        loader: 'style-loader'
+                    },
+                    {
+                        loader: 'css-loader'
+                    }
+                ]
+            }
+        ]
     }
 };
