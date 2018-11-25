@@ -22,7 +22,7 @@ module.exports = {
         Hot reloading comes out of the box with webpack-dev-sever
     */
     devServer: {
-        contentBase: './',
+        contentBase: './src',
         /* path from where index.html will be picked, set as root dir */
         overlay: true
         /* it will print the error stacktrack in browser window also
